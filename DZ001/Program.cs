@@ -32,5 +32,13 @@ int countLines = Convert.ToInt32(Console.ReadLine());
 Console.Write("Количество столбцов = ");
 int countColumns = Convert.ToInt32(Console.ReadLine());
 
+while (countLines <= 0 | countColumns <= 0)
+{
+    Console.Write("Количество строк = ");
+    countLines = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Количество столбцов = ");
+    countColumns = Convert.ToInt32(Console.ReadLine());
+}
+
 Console.WriteLine("Полученный массив");
 PrintArray(FillArray(countLines, countColumns));
